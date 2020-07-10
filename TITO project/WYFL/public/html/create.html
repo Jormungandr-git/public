@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>TITO</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+<script type="text/javascript" src="/javascripts/create.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
+<style>
+        body {
+          background-image: url('/images/backgroundv2.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        ::placeholder {
+          color: rgba(0, 0, 0, 0.673);
+          opacity: 1;
+          font-style: italic;
+        }
+        #form{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        input{
+          width:400px;
+          text-align: center;
+        }
+        span{
+          width: 50%;
+        }
+        footer{
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: turquoise;
+      }
+      a{
+        margin: 0px 40px;
+        padding: 15px;
+        height: 100%;
+      }
+      a:hover{
+        background-color: lightcyan;
+      }
+</style> 
+
+
+</head>
+<body>
+<br>
+
+<div align="center">
+    <img height="150" src="/images/titofinal2.png" title="The Intelligence Tracking Organization">
+</div>
+<h5 align="center">T h e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I n t e r c o n t i n e n t a l &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T r a c k i n g &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O r g a n i z a t i o n</h5>
+<br>
+<div id="form">
+  <span>
+    <input type="text" id="firstname" placeholder="First name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First name'"><br>
+  </span>
+  <span>
+    <input type="text" id="lastname" placeholder="Last name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last name'"><br>
+  </span>
+  <span>
+    <input type="text" id="ID" placeholder="ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'"><br>
+  </span>
+  <span>
+    <input type="text" id="countryTo" placeholder="Country" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Country'"/>
+  </span>
+  <span>
+    <input type="text" id="currentHash" disabled/>
+  </span>
+  <button class="btn waves-effect waves-light" id="submitCreate">Apply for TITO</button>
+</div>
+</body>
+<footer>
+    <a href="/map">MAP</a>
+    <a href="/register">REGISTER</a>
+    <a href="/border">BORDER</a>
+  </footer>
+</html>

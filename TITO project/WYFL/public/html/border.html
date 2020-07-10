@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>TITO</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <script type="text/javascript" src="javascripts/border.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-image: url('images/backgroundv2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 20px;
+
+        margin: 10vh 0vw;
+
+        min-width: 40%;
+        min-height: 500px;
+      }
+      .element img {
+        margin-bottom: 20vh;
+      }
+      .element button{
+        margin-top: 5vh;
+      }
+      #titoImg{
+        width: 70%;
+      }
+      #hash{
+        margin: 10vh;
+        min-width: 30vw;
+      }
+      #info{
+        width: 30vw;
+      }
+      footer{
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: turquoise;
+      }
+      a{
+        margin: 0px 40px;
+        padding: 15px;
+        height: 100%;
+      }
+      a:hover{
+        background-color: lightcyan;
+      }
+    </style> 
+  </head>
+  <body>
+
+    <div class="element">
+      <div id="hash">
+        <h3><strong>Hash</strong></h3>
+          <input type="text" id="hashInput" placeholder="#"/>
+      </div>
+
+      <div id="info">
+        <span>Name</span>
+          <input type="text" placeholder="Andraz" id="name" disabled/>
+        <span>Surname</span>
+          <input type="text" placeholder="Sirec" id="lastName" disabled/>
+        <span>ID</span>
+          <input type="text" placeholder="1704999508472" id="id" disabled/>
+        <span>Nationality</span>
+          <input type="text" placeholder="Retard" id="nationality" disabled/>
+        <span><strong>Status</strong></span>
+          <input type="text" placeholder="Wanted" id="status" disabled/>
+      </div>
+    </div>
+    <div class="element">
+
+      <img src="images/titofinal2.png" id="titoImg" alt="">
+
+      <div>
+        <span>Border at: </span><input type="text" id="countryFrom" value="SI">
+      </div>
+      <div>
+          <span>Direction: </span><input type="text" id="countryTo" value="HR">
+      </div>
+
+      <button class="btn-large waves-effect waves-light" id="authorize" type="submit" name="action">Authorize</button>
+
+    </div>
+  </body>
+  <footer>
+    <a href="/map">MAP</a>
+    <a href="/register">REGISTER</a>
+    <a href="/border">BORDER</a>
+  </footer>
+</html>

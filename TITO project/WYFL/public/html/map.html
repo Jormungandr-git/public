@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.js"></script>
+    <script src="javascripts/map.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/map.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"/>
+    <title>Document</title>
+    <style>
+    footer{
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: turquoise;
+    }
+    a{
+        margin: 0px 40px;
+        padding: 15px;
+        height: 100%;
+    }
+    a:hover{
+        background-color: lightcyan;
+    }
+    </style>
+</head>
+<body>
+    <div id="cover"></div>
+    <div id="header">
+        <img id="logo" src="images/titofinal2.png"/>
+        <h5>T h e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I n t e r c o n t i n e n t a l &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T r a c k i n g &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O r g a n i z a t i o n</h5>
+        <input id="currentHash" placeholder="User hash"/>
+        <button id="submithash" class="btn waves-effect waves-light">Submit</button>
+    </div>
+    <canvas id="canvas" style="height:90%;"></canvas>
+    <img width="80" id="indicator" src="images/yugoIcon.png"/>
+    <iframe style="position: absolute; width:100%; height: 100%; border: none" id="svgframe" src="images/world.svg"></iframe>
+</body>
+<footer>
+        <a href="/map">MAP</a>
+        <a href="/register">REGISTER</a>
+        <a href="/border">BORDER</a>
+      </footer>
+</html>
