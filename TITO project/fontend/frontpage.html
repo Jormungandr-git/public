@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>TITO</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-image: url('backgroundv2.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+      }
+      .element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        border-radius: 20px;
+
+        margin: 10vh 0vw;
+
+        min-width: 40%;
+        min-height: 500px;
+      }
+      .element img {
+        margin-bottom: 20vh;
+      }
+      .element button{
+        margin-top: 5vh;
+      }
+      #titoImg{
+        width: 70%;
+      }
+      #hash{
+        margin: 10vh;
+        min-width: 30vw;
+      }
+      #info{
+        width: 30vw;
+      }
+    </style> 
+  </head>
+  <body>
+
+
+
+
+    <div class="element">
+
+
+
+
+      <div id="hash">
+        <span><strong>Hash</strong></span><input type="text" id="hashInput" value="e8fe2f7790ab2125459df8faac1aa30664e7c7c537f5fd266a8e1ac95399a5e5">
+      </div>
+
+      <div id="info">
+        <span>Name</span><input type="text" value="Andraz" disabled>
+        <span>Surname</span><input type="text" value="Sirec" disabled>
+        <span>ID</span><input type="text" value="1704999508472" disabled>
+        <span>Nationality</span><input type="text" value="Retard" disabled>
+        <span><strong>Status</strong></span><input type="text" value="Wanted" disabled>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="element">
+
+
+      <img src="titofinal2.png" id="titoImg" alt="">
+
+      <div>
+        <span>Border at: </span><input type="text" id="countryFrom" value="SLO">
+      </div>
+
+
+      <div>
+          <span>Direction: </span><input type="text" id="countryTo" value="SWZ">
+      </div>
+
+      <button class="btn-large waves-effect waves-light" id="authorize" type="submit" name="action">Authorize</button>
+
+    </div>
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/animate.css">
+        <script src="./js/bootstrap.min.js"></script>
+        <title>Dejan Mandic</title>
+    </head>
+    <body class="">
+
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        
+        <img src="./common/info.png" alt="infoImg" id="infoImg">
+        <div id="infobubble">
+            <p>
+                Contribute to the author of the image<a href="https://www.freepik.com/free-photos-vectors/background"> Here</a> 
+            </p>
+        </div>
+        
+        <div id="container">
+            <img src="./common/5H5A5292.jpg" alt="" id="profilePic">
+            <div id="info">
+                <hr width="90%" size="0.5" style="margin-top: -5rem; margin-bottom: 5rem" >
+                <span class="name" >Dejan Mandic</span>
+                <br>    
+                <p>Student</p>
+                <p>Freelance photographer</p>
+                <p>Faculty of Computer Science</p>
+                <p>University of Ljubljana</p>
+                <hr width="90%" size="0.5" >
+                <br>
+                <br>
+            </div>
+           
+            <div id="carousel" class="carousel slide slideshow" data-ride = "carousel" data-interval="3000">
+                    
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="./common/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="First Slide" width="100%">
+                        <div class="carousel-caption">
+                            <h2 style="font-family: 'Lucida Sans'">  <strong>Programing</strong> </h2>
+                            <h4 style="font-family: 'Lucida Sans'">Web development, Network security, Game design</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./common/anja.jpg" alt="Third Slide" width="100%">
+                        <div class="carousel-caption">  
+                                <h2 style="font-family: googleCurly">  <strong>Portraits</strong> </h2>
+                                <h4 style="font-family: googleCurly">Birthdays,Weedings,Baptisms</h4>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./common/horse.jpg" alt="Secound Slide" width="100%">
+                        <div class="carousel-caption">
+                                <h2 style="font-family: googleCurly">  <strong>Nature</strong> </h2>
+                                <h4 style="font-family: googleCurly">Beauty in the eye</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <hr width="90%" size="0.5" >
+
+            <div id="bio">
+                <h2 class="name">Bio</h2>
+                <hr width="30%" >
+                <p>First year graduate on Faculty of Computer Science, Ljubljana. <br>
+                    Self taught at many languages, but focused at Java, C# and Python. <br>
+                    Most of my ambitions are in Network Security, but also i am really devoted to frontend and backend web development. <br>
+                    <br>
+                    I have 4 years as an freelance photographer behind me. <br>
+                    Comfortable using  Adobe CC on a regular basis for editing videos and photographs. <br>
+
+                </p>
+
+
+            </div>
+            <hr width="90%" size="0.5" >
+
+            <form action="MAILTO: dejanmandic99@hotmail.com" method="POST" enctype="text/plain" id="emailForm">
+                <h2 class="name">Send me an email</h2>
+                <hr width="70%" style="background-color: rgb(192, 237, 255)" >
+                <br>
+                <span>Name: </span> <input type="text" id="senderName"">
+                <span>Email</span> <input type="email" id="senderEmail">
+                <span>Comment</span> <textarea name="senderComment" id="senderComment" cols="30" rows="10" style="resize: none;"></textarea>
+                <input type="submit" class="EmailButton">
+                <input type="reset" class="EmailButton">
+
+            
+            </form>
+
+            <hr width="90%" size="0.5" >
+
+            <div id="media">
+                <a href="https://www.facebook.com/dejan.mandic.9404"><img src="./common/f.png" alt="Facebook Logo" id="fb"></a>
+                <a href="https://www.instagram.com/mandic_photoworks/?hl=en"><img src="./common/insta.png" alt="Instagram Logo" id="insta"></a> 
+                <a href="https://www.linkedin.com/in/dejan-mandic1999/"><img src="./common/in.png" alt="Linkedin Logo" id="in"></a> 
+                <a href="#"><img src="./common/g+.png" alt="Instagram Logo" id="g+"></a>
+            </div>
+
+            <hr width="90%" size="0.5" >
+
+
+            
+
+
+
+
+            <p style="font-size: 1.5vm; color: rgb(179, 179, 179)">ⓒ Dejan Mandic | 2019 | Ljubljana </p>
+        </div>
+
+    </body>
+    <script> 
+    /// LOADER SCRIPT [MOVE IT TO SCRIPT.JS IN FUTURE]
+    $(window).on("load",function(){
+          //$(".loader-wrapper").addClass("animated fadeOut slow");
+          $(".loader-wrapper").hide();
+          //console.log("Loader Gone!");
+          $('body').addClass('animated fadeInUp slow')
+    });
+
+    </script>
+</html>

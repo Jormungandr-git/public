@@ -1,0 +1,345 @@
+/* NAVIGATION BAR */
+
+#nav_menu{
+    visibility: hidden;
+
+}
+.menu_buttons{
+    position: absolute;
+    top: -0.15vw;
+    right: -10.5vw;
+    padding: 12vw 8vw;
+    z-index: 20;
+}
+.m_button{
+    margin: 0.8vw 0vw;
+    transform: rotate(-30.5deg);
+    padding: 2.35vw 10.1vw;
+    z-index: 5;
+}
+.m_button:hover{
+    opacity: 0.2;
+    background-color: black;
+}
+#menu_back{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+#navigation_bar{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+}
+#nav_immage{
+    width: 100%;
+    opacity: 0.4;
+    display: block;
+}
+#nav_logo{
+    top: 1vw;
+    left: 1vw;
+    position: absolute;
+    width: 12vw;
+    z-index: 10;
+}
+#nav_menu_logo{
+    top: 1vw;
+    right: 1vw;
+    position: absolute;
+    width: 2vw;
+    z-index: 30;
+}
+#navigation_bar h1{
+    text-align: center;
+    margin-bottom: 0%;
+    color: rgb(255, 0, 119);
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: 'ExoBold';
+}
+.caption{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: 1vw;
+    z-index: 10;
+    font-family: 'ExoRegular';
+}
+.caption a{
+    padding: 0px 1vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    
+}
+/* BODY */
+
+body{
+    margin: 0%;
+    background-color:white;
+}
+
+#container{
+    padding-right: 11vw;
+    position: absolute;
+    width: 100%;
+    height: 110vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28vw;
+    z-index: 20;
+}
+#container_heading{
+    display: flex;
+    margin: 5vw 0vw;
+    color: rgb(255, 0, 119);
+    font-size: 2vw;
+    font-family: 'ExoRegular';
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    margin: 0px 2vw;
+    padding: 1vw 3vw;
+    font-size: 1vw;
+    font-family: 'ExoRegular';
+    border: 0.3vw rgb(184, 184, 184) dotted;
+}
+.box h2{
+    color: rgb(255, 0, 119);
+    margin-top: -2.1vw;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+.inner_box{
+    word-wrap: normal;
+    display: flex;
+    justify-content: center;
+}
+.inner_box a{
+    color: gray;
+}
+.inner_box p{
+    word-wrap: normal;
+    width: 100%;
+    margin: 1vw;
+} 
+#video_container iframe {
+    border: 0;
+    height: 40%;
+    left: 15.1vw;
+    position: absolute;
+    top: 10vw;
+    width: 63%;
+    margin-top: 10vw;
+    z-index: 0;
+    
+}
+#bio{
+    position: absolute;
+    bottom: 28vw;
+    font-size: 1.5vw;
+    font-family: 'ExoRegular';
+    width:63%;
+    border-bottom: 0.1vw dotted gray;
+
+}
+#bottom_nav{
+    position: absolute;
+    justify-content: space-between;
+    bottom: 20vw;
+    display: flex;
+    width: 63%;
+    font-size: 5vw;
+    font-family: 'ExoRegular';
+    color: gray;
+}
+#bottom_nav P{
+    text-align: right;
+    margin-top: -5vw;
+    font-size: 1.5vw;
+}
+#bottom_nav h5{
+    color: rgb(255, 0, 119);
+    margin-top: -0vw;
+    font-size: 3vw;
+    font-family: 'ExoBold';
+}
+#bottom_nav img{
+    width: 2.5vw;
+    margin: 0vw -0.62vw;
+}
+
+
+
+#footer{
+    position: absolute;
+    bottom: 0vw;
+    background-color: rgb(185, 185, 185);
+    width: 100%;
+    height: 15vw;
+
+    display: flex;
+    font-size: 1vw;
+    font-family: 'ExoRegular';
+    color: white;
+    align-items: center;
+    padding-right: 11vw;
+}
+#footer_logo{
+    margin-left: 12vw;
+    width: 20%;
+}
+#footer p{
+    margin-left: 3vw;
+}
+#footer a{
+    text-decoration: none;
+    color: rgb(255, 0, 119);
+  }
+
+
+
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 490px){
+    
+    /* NAVIGATION BAR */
+    #navigation_bar{
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        height: 200px;
+    }#navigation_bar h1{
+        font-size: 8vw;
+    }
+    #nav_immage{
+        height: 100%;
+        width: auto;
+        margin-left: -15ch;
+    }
+    .caption{
+        top: 15vw;
+        left: 22vw;
+        font-size: 2vw;
+    }
+    #nav_menu_logo{
+        
+        width: 5vw;
+        
+    }
+    
+
+
+
+    /* BODY */
+
+    #container_heading{
+        margin: 7vw 0vw;
+        font-size: 3vw;    
+    }
+    #container{
+        width: 100%;
+        height: 180vw;
+        margin-top: 45vw;
+    }
+    .box{
+        text-align: center;
+        padding: 3vw 5vw;
+        font-size: 2vw;
+    }
+    .box h2{
+        margin-top: -5.2vw;
+        padding: 0vh 5vh;
+        background-color: white;
+        text-align: center;
+    }
+    .inner_box{
+        word-wrap: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #video_container iframe {
+        left: 5.5vw;
+        top: 23vw;
+        width: 80%; 
+    }
+    #bio{
+        bottom: 30vw;
+        font-size: 3vw;
+        width:80%;
+        margin-bottom: 5vw;
+        border-bottom: 0.3vw dotted gray;
+    
+    }
+    #bottom_nav{
+        bottom: 25vw;
+        width: 80%;
+        font-size: 5vw;
+    }
+    #bottom_nav P{
+        text-align: right;
+        margin-top: -5vw;
+        font-size: 1.5vw;
+    }
+    #bottom_nav h5{
+        color: rgb(255, 0, 119);
+        margin-top: -0vw;
+        font-size: 3vw;
+    }
+    #bottom_nav img{
+        width: 2.5vw;
+        margin: 0vw -0.62vw;
+    }
+    #media{
+        visibility: hidden;
+    }
+    #footer{
+        position: absolute;
+        bottom: 0vw;
+        background-color: rgb(185, 185, 185);
+        height: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1vw;
+        color: white;
+        align-items: center;
+    }
+    #footer_logo{
+        width: 20%;
+        height: auto;
+    }
+    #footer p{
+        margin-left: 8vw;
+    }
+
+    
+  }
+  @font-face
+    {
+        font-family: ExoRegular;
+        src: url('../common/fonts/Exo-Regular.ttf');
+    }
+    @font-face
+    {
+        font-family: ExoBold;
+        src: url('../common/fonts/Exo-Bold.ttf');
+    }

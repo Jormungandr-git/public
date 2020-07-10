@@ -1,0 +1,189 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(../common/7440.jpg);
+    background-size: cover; 
+}
+#infoIMG{
+    position: absolute;
+    width: 3rem;
+    right: 0;
+}
+#infobubble{
+    background-color: #Fff;
+    position: absolute;
+    border-radius: 20px;
+    padding: 10px;
+    right: 10px;
+    top: 50px;
+    width: 10rem;
+    font-family: robotoLight;   
+    opacity: 0.5;
+    display: none;
+}
+#media{
+    display: flex;
+    justify-content: center;
+}
+#media a{
+    display: flex;
+    justify-content: center;
+
+}
+#media a img{
+    width: 30%;
+    
+}
+#footer{
+    font-family: robotoLight;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -450;
+}
+#info{
+    text-align: center;
+    font-family: robotoLight;
+    width: 50vw;
+    max-width: 50rem;
+}
+#container{ 
+    font-size: 1rem;
+    max-height: 135rem;
+    width: 50rem;
+    margin-top: 5rem;
+    padding-top: 13rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: robotoLight;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    flex-direction: column;
+    margin-bottom: 150px;
+
+
+}
+#profilePic{
+    position: absolute;
+    width: 8rem;
+    max-width: 30vw;
+    border-radius: 100px;
+    margin-top: -11rem;
+}
+#container .name{
+    font-size: 1.5rem;
+}
+#bio{
+    text-align: center;
+    max-width: 90%;
+}
+.slideshow{
+    width: 100%;
+    margin-bottom: 10vw;
+}
+.carousel-item{
+    height: 23em;
+    max-height: 35vw;
+}
+.carousel-caption h2{
+    margin: 0%;
+    font-size: 2vw;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.123)
+}
+.carousel-caption h4{
+    margin: 0%;
+    font-size: 2vw;
+    border-radius:  0px 0px 20px 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.123)
+}
+#emailForm{
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#senderName{
+    border: 2px rgba(157, 252, 255, 0.685) solid;
+    border-radius: 20px;
+}
+#senderEmail{
+    border: 2px rgba(157, 252, 255, 0.685) solid;
+    border-radius: 20px;
+
+}
+#senderComment{
+    height: 10rem;
+    border-radius: 10px;
+    border: 2px rgba(157, 252, 255, 0.685) solid;
+
+}
+.EmailButton{
+    border: 2px rgba(157, 252, 255, 0.685) solid;
+    margin-top: 2%;
+    padding: 2%;
+    width: 40%;
+    margin-left: 31%;
+    border-radius: 20px;
+    background-color:white
+}
+.EmailButton:hover{
+    border: 2px #ffaade91 solid;
+}
+@font-face {
+    font-family: robotoLight;
+    src: url(../common/Roboto-Thin.ttf);
+  }
+@font-face {
+    font-family: googleCurly;
+    src: url(../common/GreatVibes-Regular.ttf);
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #72aafd;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.loader {
+    margin-top: -25%;
+    margin-top: em;
+    display: inline-block;
+    width: 30px;
+    height: 30px;                
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+    z-index: 10;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
